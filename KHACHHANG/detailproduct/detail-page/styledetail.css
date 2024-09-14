@@ -1,0 +1,227 @@
+.detail{
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+
+    background: #F3F8FB;
+    padding-top: 20px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+position: relative;
+padding-bottom: 20px;
+}
+
+.detail-content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.detail-content1_infor{
+    margin-left: 25px;
+
+}
+.detail-content1_img{
+    width: 50%;
+    
+}
+.product-name{
+    margin-bottom: 20px;
+}
+.product-price{
+    display: flex;
+    margin-bottom: 5px;
+
+}
+.product-price h3{
+   
+    font-size: 25px;
+    justify-content:center;
+     margin: auto 0px;
+    
+}
+.product-price p{
+    margin-left: 15px;
+    font-size: 38px;
+    color: red;
+    text-align: center;
+    font-weight: 600;
+}
+.assurance h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.detail-content2_description h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+  
+}
+.detail-content2_description p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+.full-width-line {
+  border: none;
+  border-top: 1px solid #000; /* Màu và độ dày của đường kẻ */
+  margin-top: 20px;
+  width: 100%; /* Đường kẻ chiều ngang sẽ chiếm toàn bộ width */
+}
+
+
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-back{
+    
+   margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.btn-back {
+    display: flex;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #6225E6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    }
+    
+    .btn-back:focus {
+    outline: none;
+    }
+    
+    .btn-back:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+    }
+    
+    .btn-back .second {
+    transition: 0.5s;
+    margin-right: 0px;
+    }
+    
+    .btn-back:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+    }
+    
+    .span {
+    transform: skewX(15deg)
+    }
+    
+    .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+    }
+    
+    .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+    }
+    
+    .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+    }
+    
+    .btn-back:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+    }
+    
+    .btn-back:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+    }
+    
+    .btn-back:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+    }
+    
+    @keyframes color_anim {
+    0% {
+    fill: white;
+    }
+    
+    50% {
+    fill: #FBC638;
+    }
+    
+    100% {
+    fill: white;
+    }
+    }
+
+
+
+
+    .buy-btn {
+        position: relative;
+        overflow: hidden;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: hsl(255deg 50% 40%);
+        border: solid 4px hsl(50deg 100% 50%);
+        font-family: inherit;
+       }
+       
+       .default-btn, .hover-btn {
+        background-color: hsl(255deg 50% 40%);
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all .3s ease;
+       }
+       
+       .hover-btn {
+        position: absolute;
+        inset: 0;
+        background-color: hsl(255deg 50% 49%);
+        transform: translate(0%, 100%);
+       }
+       
+       .default-btn span {
+        color: hsl(0, 0%, 100%);
+       }
+       
+       .hover-btn span {
+        color: hsl(50deg 100% 50%);
+       }
+       
+       .buy-btn:hover .default-btn {
+        transform: translate(0%, -100%);
+       }
+       
+       .buy-btn:hover .hover-btn {
+        transform: translate(0%, 0%);
+     }

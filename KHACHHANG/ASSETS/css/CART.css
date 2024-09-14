@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #254753;
+    height: 50px;
+}
+header > a {
+    display: inline-block;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: #fff;
+    margin: 0 20px;
+    height: 100%;
+    text-decoration: none;
+    padding: 10px;
+}
+header > a:hover{
+    background-color: #000;
+}
+.form-CART{
+    padding-top: 30px;
+}
+.table-product{
+    width: 100%;
+    padding: 20px 0px 70px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin-bottom: 20px;
+}
+.table-product-body img{
+    height: 100px;
+    width: 150px;
+    padding: 5px;
+}
+
+.table-product-body td{
+    text-align: center;
+    width: 200px;
+}
+.quantity-input{
+    width: 50px;
+}
+.buyprd{
+    
+    background-color: #254753;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+}
+.buyprd div{
+    color: #fff;
+}
+.buyprd button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(173, 118, 15);
+    color: #fff;
+}
+
+.buyprd button:hover{
+    background-color: orange ;
+    color: #000;
+}

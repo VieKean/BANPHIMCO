@@ -1,0 +1,305 @@
+body{
+    background-image: url("../../img/IMG-home-page/4082394.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh
+}
+.signUp{
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    height: 700px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgb(255, 255, 255);
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 10px;
+}
+.signUp > .error{
+    display: block;
+    height: 18px;
+}
+.signUp-title{
+  
+}
+.signup-description{
+    font-weight: 500;
+    font-size: 18px;
+}
+.form-signUp{
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+.form-signUp_label{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+.form-signUp_input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.form-signUp_input::placeholder{
+    color: rgba(240, 255, 255, 0.482);
+    font-size: 18px;
+}
+
+
+
+
+
+.signUp-btn {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+--glow-color: rgb(255, 255, 255);
+
+--enhanced-glow-color: rgb(255, 5, 5);
+--btn-color: rgb(0, 0, 0);
+border: .25em solid var(--glow-color);
+padding: 1em 3em;
+text-align: center;
+padding: 10px;
+color: var(--glow-color);
+height: 60px;
+font-size: 20px;
+font-weight: bold;
+background-color: transparent;
+border-radius: 1em;
+outline: none;
+box-shadow: 0 0 1em .25em var(--glow-color),
+0 0 4em 1em var(--glow-spread-color),
+inset 0 0 .75em .25em var(--glow-color);
+text-shadow: 0 0 .5em var(--glow-color);
+position: relative;
+transition: all 0.3s;
+width: 50%;
+}
+
+.signUp-btn::after {
+pointer-events: none;
+content: "";
+position: absolute;
+top: 120%;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: var(--glow-spread-color);
+filter: blur(2em);
+opacity: .7;
+transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.signUp-btn:hover {
+color: var(--btn-color);
+background-color: var(--glow-color);
+box-shadow: 0 0 1em .25em var(--glow-color),
+0 0 4em 2em var(--glow-spread-color),
+inset 0 0 .75em .25em var(--glow-color);
+}
+
+.signUp-btn:active {
+box-shadow: 0 0 0.6em .25em var(--glow-color),
+0 0 2.5em 2em var(--glow-spread-color),
+inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .signUp-btn,
+.signUp-btn *,
+.signUp-btn :after,
+.signUp-btn :before,
+.signUp-btn:after,
+.signUp-btn:before {
+border: 0 solid;
+box-sizing: border-box;
+}
+
+.signUp-btn {
+-webkit-tap-highlight-color: transparent;
+-webkit-appearance: button;
+background-color: #ebaa1c;
+background-image: none;
+color: #fff;
+cursor: pointer;
+font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-size: 100%;
+line-height: 1.5;
+margin: 0;
+-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+padding: 0;
+}
+
+.signUp-btn:disabled {
+cursor: default;
+}
+
+.signUp-btn:-moz-focusring {
+outline: auto;
+}
+
+.signUp-btn svg {
+display: block;
+vertical-align: middle;
+}
+
+.signUp-btn [hidden] {
+display: none;
+}
+
+.signUp-btn {
+box-sizing: border-box;
+display: block;
+font-weight: 900;
+-webkit-mask-image: none;
+padding: 2rem 5rem;
+perspective: 800px;
+position: relative;
+text-transform: uppercase;
+transform-style: preserve-3d;
+}
+
+.signUp-btn span {
+background: #ebaa1c;
+color: #ffffff;
+display: grid;
+inset: 0;
+place-items: center;
+position: absolute;
+transform: rotateX(0deg);
+transform-origin: top center;
+transition: 0.2s;
+}
+
+.signUp-btn:hover span {
+transform: rotateX(35deg);
+}
+
+.signUp-btn:after,
+.signUp-btn:before {
+background: #ddd;
+content: "";
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+transform: rotateX(0deg);
+width: 100%;
+z-index: -1;
+}
+
+.signUp-btn:after {
+background: #ccc;
+width: 0;
+}
+
+.signUp-btn:hover:after {
+-webkit-animation: progress-bar 1.2s;
+animation: progress-bar 1.2s;
+}
+
+@-webkit-keyframes progress-bar {
+0% {
+opacity: 1;
+width: 0;
+}
+
+10% {
+opacity: 1;
+width: 15%;
+}
+
+25% {
+opacity: 1;
+width: 25%;
+}
+
+40% {
+opacity: 1;
+width: 35%;
+}
+
+55% {
+opacity: 1;
+width: 75%;
+}
+
+60% {
+opacity: 1;
+width: 100%;
+}
+
+to {
+opacity: 0;
+width: 100%;
+}
+}
+
+@keyframes progress-bar {
+0% {
+opacity: 1;
+width: 0;
+}
+
+10% {
+opacity: 1;
+width: 15%;
+}
+
+25% {
+opacity: 1;
+width: 25%;
+}
+
+40% {
+opacity: 1;
+width: 35%;
+}
+
+55% {
+opacity: 1;
+width: 75%;
+}
+
+60% {
+opacity: 1;
+width: 100%;
+}
+
+to {
+opacity: 0;
+width: 100%;
+}
+} */

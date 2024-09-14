@@ -1,0 +1,68 @@
+.wrapper-guest{
+    padding-top: 50px;
+    height: 800px;
+    display: flex;
+    width: 100%;
+    background-color: #e2e0e0;
+    
+    
+}
+
+
+
+
+
+
+
+
+.nav-guest{
+    width: 15%;
+    text-align: center;
+    background-color: #254753;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.nav-guest .nav > li:first-child{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+
+.icon-profile{
+    font-size: 50px;
+    margin-right: 5px;
+}
+.name-profile{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.nav-guest .nav > li{
+    height: 70px;
+}
+.nav-guest .nav > li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+    color: #fff;
+    
+    height: 100%;
+    width: 100%;
+}
+.nav-guest .nav > li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.content-inf{
+    margin: 10px;
+    background-color: #fff;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}   
